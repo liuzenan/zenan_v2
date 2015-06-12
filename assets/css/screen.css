@@ -1,0 +1,346 @@
+/* Reset */
+
+article, aside, details,
+figcaption, figure,
+footer, header, hgroup,
+main, nav, section,
+summary { display: block; }
+audio, canvas, video { display: inline-block; }
+audio:not([controls]) { display: none; height: 0; }
+[hidden], template { display: none; }
+html {
+   font-family: sans-serif;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+body { margin: 0; }
+a { background: transparent; }
+a:focus { outline: thin dotted; }
+a:active, a:hover { outline: 0; }
+h1 { font-size: 2em; margin: 0.67em 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: 500; }
+dfn { font-style: italic; }
+hr {
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+   height: 0;
+}
+mark { background: #FF0; color: #000; }
+code, kbd, pre,
+samp { font-family: monospace, serif; font-size: 1em; }
+pre { white-space: pre-wrap; }
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+small { font-size: 80%; }
+sub, sup {
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+}
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+img { border: 0; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+fieldset {
+   border: 1px solid #c0c0c0;
+   margin: 0 2px;
+   padding: 0.35em 0.625em 0.75em;
+}
+legend { border: 0; padding: 0; }
+button, input, select,
+textarea { font-family: inherit; font-size: 100%; margin: 0; }
+button, input { line-height: normal; }
+button, select { text-transform: none; }
+button, html input[type="button"],
+input[type="reset"], input[type="submit"] {
+   -webkit-appearance: button;
+   cursor: pointer;
+}
+button[disabled], html input[disabled] { cursor: default; }
+input[type="checkbox"],
+input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] {
+   -webkit-appearance: textfield;
+   -moz-box-sizing: content-box;
+   -webkit-box-sizing: content-box;
+   box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner,
+input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+/* Page layout */
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    line-height: 24px;
+    min-height: 100%;
+}
+
+body {
+    font-family: "ff-meta-serif-web-pro",serif;
+    letter-spacing: 0.01rem;
+    -webkit-font-feature-settings: 'kern' 1;
+    -moz-font-feature-settings: 'kern' 1;
+    -o-font-feature-settings: 'kern' 1;
+    min-height: 100%;
+    zoom: 1;
+    position: relative;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    line-height: 1.2em;
+}
+
+.main {
+  width: 100%;
+  background: white;
+}
+
+.divider {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  border-right: 1px solid #eee;
+  z-index: -1;
+}
+
+/* Sidebar */
+
+.sidebar {
+  float: left;
+  width: 320px;
+  padding: 1em 0;
+  border-right: 1px solid #eee;
+  background: white;
+}
+
+.sidebar-logo {
+  margin-top: 1em;
+}
+
+.sidebar-section {
+  font-family: "museo-sans",sans-serif;
+  margin: 2em 0 .5em 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sidebar-content {
+  padding: 0 40px;
+}
+
+.logo-name {
+  font-family: "museo-sans",sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav .nav-link {
+  padding: 10px 40px;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: blue;
+}
+
+.nav-link:hover {
+  background: #f9f9f9;
+}
+
+.nav-link:visited:hover {
+  text-decoration: none;
+}
+
+.footer {
+  display: block;
+  padding: 2em 0 1em 0;
+  color: #999;
+}
+
+/* Content layout */
+
+.main-section--wide {
+  width: 100%;
+  margin: 0;
+}
+
+.main-section--narrow {
+  margin-left: 321px;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+}
+
+.btn-default {
+  background: blue;
+  color: white;
+}
+
+.btn-default:hover {
+  background: darkblue;
+}
+
+.btn-tag {
+  background: #f9f9f9;
+  color: black;
+}
+
+.btn-tag:hover {
+  background: #f6f6f6;
+}
+
+.btn-tag--active {
+  background: green;
+  color: white;
+}
+
+.btn-tag--active:hover {
+  background: darkgreen;
+}
+
+
+/* Tags */
+
+.tagnav {
+  padding: 3em;
+}
+
+
+.tagnav>.btn+.tagnav.btn{
+  margin-left: 2px;
+}
+
+/* Post */
+
+.post img {
+  max-width: 100%;
+}
+
+.post-meta {
+  color: gray;
+}
+
+.post-tag {
+  text-transform: capitalize;
+}
+
+.post-template .content {
+  padding: 3em;
+  margin: 0 auto;
+  width: 36em;
+  font-size: 1.2em;
+}
+
+.post-template .post-content {
+  line-height: 1.8em;
+}
+
+/* Post list */
+
+
+
+.post-list .post-link {
+  display: block;
+  padding: 3em;
+  text-decoration: none;
+}
+
+.post-list .post-link:hover {
+  background: #f9f9f9;
+}
+
+
+
+.post-list .post-head {
+}
+
+.post-list .post-title {
+  color: blue;
+}
+
+.post-list .post-excerpt {
+  color: black;
+}
+
+.post-link>.post-header, .post-link>.post-excerpt, .post-link>.post-meta {
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+/* Navigation */
+
+.pagination {
+  font-family: "museo-sans",sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.extra-pagination {
+  display: none;
+}
+
+.post-list .pagination{
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+.pagination>.newer-posts {
+  margin-right: 1em;
+}
+
+.pagination>.older-posts {
+  margin-left: 1em;
+}
+
+/* Post Nav */
+
+.post-nav {
+  display: table;
+  width: 100%;
+}
+
+.post-nav .nav-link {
+  float: none;
+  display: table-cell;
+  width: 50%;
+  vertical-align: top;
+  padding: 2em;
+}
+
+.post-nav-next{
+  text-align: left;
+}
+.post-nav-previous {
+  text-align: right;
+}
