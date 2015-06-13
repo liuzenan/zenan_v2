@@ -210,6 +210,10 @@ h4, h5, h6 {
   background: darkblue;
 }
 
+.btn-right {
+  float: right;
+}
+
 .btn-tag {
   background: #f9f9f9;
   color: black;
@@ -231,8 +235,19 @@ h4, h5, h6 {
 
 /* Tags */
 
-.tagnav {
-  padding: 3em;
+.top-nav {
+  padding: 3em 0;
+  margin: 0 auto;
+}
+
+.home-template .top-nav, .tag-template .top-nav, .archive-template .top-nav {
+  max-width: 40em;
+}
+
+.post-template .top-nav {
+  max-width: 40em;
+  padding: 2em 3em 1em 3em;
+  font-size: 1.2em;
 }
 
 
@@ -255,9 +270,9 @@ h4, h5, h6 {
 }
 
 .post-template .content {
-  padding: 3em;
   margin: 0 auto;
-  width: 36em;
+  padding: 0 3em 3em 3em;
+  max-width: 40em;
   font-size: 1.2em;
 }
 
